@@ -2,10 +2,6 @@ port() {
   open http://localhost:$1
 }
 
-p() {
-  open http://localhost:$1
-}
-
 # Docker
 nuke_img() {
   docker image rm $(docker image ls -q) -f
